@@ -19,6 +19,6 @@ jobs:
 
       - name: Print Hello World
         run: echo "Hello, World! 🚀 CI Pipeline is running!"
-
+              ls -ltr
       - name: Run a Simple Test
         run: echo "Running tests..." && sleep 2 && echo "✅ Tests passed!"
