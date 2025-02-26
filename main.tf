@@ -26,3 +26,15 @@ provider "aws" {
 #  source      = "./modules/tf-state"
 #  bucket_name = "cc-tf-state-backend-ci-cd26feb25"
 #}
+
+resource "aws_instance" "my_ec2_instance" {
+  ami                    = "ami-05b10e08d247fb927"  # Amazon Linux 2 AMI (Update as needed)
+  instance_type          = "t2.micro"
+ # key_name               = "my-key-pair"  # Replace with your key pair name
+ # subnet_id              = "subnet-xxxxxxxx"  # Replace with a valid subnet ID
+ # security_groups        = ["default"]  # Replace with your security group
+
+  tags = {
+    Name = "My-T2Micro-Instance"
+  }
+}
