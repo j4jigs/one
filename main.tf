@@ -51,3 +51,15 @@ resource "aws_instance" "my_t3_instance" {
     Name = "My-T3Micro-Instance"
   }
 }
+
+resource "aws_instance" "my_t3_instance" {
+  ami                    = "ami-05b10e08d247fb927"  # Amazon Linux 2 AMI (Update if needed)
+  instance_type          = "t3.micro"
+#  key_name               = "my-key-pair"  # Replace with your actual key pair name
+#  subnet_id              = "subnet-xxxxxxxx"  # Replace with your valid subnet ID
+#  security_groups        = ["default"]  # Replace with your security group
+
+  tags = {
+    Name = "My-T3Micro-latest"
+  }
+}
