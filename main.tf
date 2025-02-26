@@ -2,7 +2,7 @@ terraform {
   # Run init/plan/apply with "backend" commented-out (ueses local backend) to provision Resources (Bucket, Table)
   # Then uncomment "backend" and run init, apply after Resources have been created (uses AWS)
   backend "s3" {
-    bucket         = "cc-tf-state-backend-ci-cd26feb25"
+    bucket         = "cc-tf-state-backend-ci-cd26feb2607"
     key            = "tf-infra/terraform.tfstate"
     region         = "us-east-1"
  #   dynamodb_table = "terraform-state-locking"
