@@ -52,7 +52,7 @@ resource "aws_instance" "my_t3_instance" {
   }
 }
 
-resource "aws_instance" "my_t3_instance" {
+resource "aws_instance" "my_t3_instance2" {
   ami                    = "ami-05b10e08d247fb927"  # Amazon Linux 2 AMI (Update if needed)
   instance_type          = "t3.micro"
 #  key_name               = "my-key-pair"  # Replace with your actual key pair name
